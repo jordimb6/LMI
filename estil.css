@@ -1,0 +1,86 @@
+/* ====== Ajustos generals ====== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ====== Capçalera ====== */
+.cap {
+  background-color: #1e88e5;
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+/* ====== Contenidor del cos (3 columnes) ====== */
+.menu, .main, .right {
+  padding: 20px;
+}
+
+/* MENU LATERAL */
+.menu {
+  float: left;
+  width: 20%;
+  background: #f1f1f1;
+  min-height: 300px;
+}
+
+.menu a {
+  display: block;
+  background-color: #ddd;
+  color: black;
+  padding: 12px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.menu a:hover {
+  background-color: #bbb;
+}
+
+/* COS PRINCIPAL */
+.main {
+  float: left;
+  width: 60%;
+}
+
+/* COLUMNA DRETA */
+.right {
+  float: left;
+  width: 20%;
+  background: #f9f9f9;
+  min-height: 300px;
+}
+
+/* ====== Peu de pàgina ====== */
+.peu {
+  clear: both;
+  background-color: #1e88e5;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* ====== RESPONSIVITAT ====== */
+
+/* Quan la pantalla és petita les columnes es posen una sota l'altra */
+@media screen and (max-width: 800px) {
+  .menu, .main, .right {
+    width: 100%;
+    float: none;
+  }
+
+  .menu {
+    min-height: auto;
+  }
+
+  .right {
+    min-height: auto;
+  }
+}
